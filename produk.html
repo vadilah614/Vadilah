@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - Vadilah Flower Shop</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .logo {
+            width: 5000px;
+            height: auto;
+            max-width: 100%;
+        }
+
+        nav {
+            margin-bottom: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-menu {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-menu li {
+            display: inline;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-menu li a:hover {
+            background-color: #ffc107;
+            color: #fff;
+        }
+
+        .product-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .product p {
+            text-align: justify;
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .buy-button {
+            background-color: #ffc107;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .buy-button:hover {
+            background-color: #e0a800;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .contact-info a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .product-container {
+                grid-template-columns: 1fr;
+            }
+
+            .logo {
+                width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Logo Toko Bunga -->
+    <header>
+        <img src="Gambar/Logo 3.png" alt="Logo Vadilah Flower Shop" class="logo">
+    </header>
+
+    <!-- Menu Navigasi -->
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="produk.html">Produk</a></li>
+            <li><a href="saran.html">Saran</a></li>
+        </ul>
+    </nav>
+
+    <!-- Produk Bunga -->
+    <section class="product-container">
+        <!-- Produk 1: Gerbera Daisy -->
+        <div class="product">
+            <img src="Gambar/Gerbera Daisy.jpeg" alt="Gerbera Daisy">
+            <h3>Gerbera Daisy</h3>
+            <p>Bunga Gerbera Daisy dikenal dengan warna-warninya yang cerah, cocok untuk dekorasi pernikahan atau hadiah ulang tahun.</p>
+            <table>
+                <tr>
+                    <th>Ukuran</th>
+                    <th>Harga</th>
+                    <th>Ketersediaan</th>
+                </tr>
+                <tr>
+                    <td>Kecil</td>
+                    <td>Rp50.000</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Sedang</td>
+                    <td>Rp75.000</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Besar</td>
+                    <td>Rp100.000</td>
+                    <td>Tersedia</td>
+                </tr>
+            </table>
+            <ul>
+                <li>Tersedia dalam warna merah, kuning, dan putih.</li>
+                <li>Bunga segar bertahan hingga 7 hari.</li>
+                <li>Cocok untuk dekorasi pesta.</li>
+            </ul>
+            <button class="buy-button">Buy</button>
+        </div>
+
+        <!-- Produk 2: Kaktus Hias -->
+        <div class="product">
+            <img src="Gambar/Kaktus Hias.jpeg" alt="Kaktus Hias">
+            <h3>Kaktus Hias</h3>
+            <p>Kaktus Hias merupakan tanaman yang mudah dirawat dan cocok sebagai dekorasi rumah atau kantor.</p>
+            <table>
+                <tr>
+                    <th>Ukuran</th>
+                    <th>Harga</th>
+                    <th>Ketersediaan</th>
+                </tr>
+                <tr>
+                    <td>Kecil</td>
+                    <td>Rp30.000</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Sedang</td>
+                    <td>Rp50.000</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Besar</td>
+                    <td>Rp80.000</td>
+                    <td>Tersedia</td>
+                </tr>
+            </table>
+            <ul>
+                <li>Mudah dirawat, tidak butuh banyak air.</li>
+                <li>Cocok untuk dekorasi dalam ruangan.</li>
+                <li>Bertahan lama hingga bertahun-tahun.</li>
+            </ul>
+            <button class="buy-button">Buy</button>
+        </div>
+
+        <!-- Produk 3: Mawar -->
+        <div class="product">
+            <img src="Gambar/Mawar Merah.jpeg" alt="Mawar">
+            <h3>Mawar</h3>
+            <p>Mawar adalah simbol cinta dan keindahan yang sering digunakan dalam berbagai acara spesial seperti pernikahan dan hari Valentine. Dengan warna-warna yang beragam, bunga ini sangat populer.</p>
+            <table>
+                <tr>
+                    <th>Ukuran</th>
+                    <th>Harga</th>
+                    <th>Ketersediaan</th>
+                </tr>
+                <tr>
+                    <td>Kecil</td>
+                    <td>Rp70.000</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Sedang</td>
+                    <td>Rp100.000</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Besar</td>
+                    <td>Rp150.000</td>
+                    <td>Tersedia</td>
+                </tr>
+            </table>
+            <ul>
+                <li>Tersedia dalam warna merah, putih, dan pink.</li>
+                <li>Bunga segar bertahan hingga 7 hari.</li>
+                <li>Cocok untuk hadiah romantis dan dekorasi acara spesial.</li>
+            </ul>
+            <button class="buy-button">Buy</button>
+        </div>
+
+        <!-- Produk 4: Venus Fly Trap -->
+        <div class="product">
+            <img src="Gambar/Venus Fly Trap.jpeg" alt="Venus Fly Trap">
+            <h3>Venus Fly Trap</h3>
+            <p>Venus Fly Trap adalah tanaman karnivora unik yang bisa menangkap serangga. Cocok sebagai hiasan rumah atau koleksi tanaman eksotis bagi pecinta tanaman.</p>
+            <table>
+                <tr>
+                    <th>Ukuran</th>
+                    <th>Harga</th>
+                    <th>Ketersediaan</th>
+                </tr>
+                <tr>
+                    <td>Kecil</td>
+                    <td>Rp80.000</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Sedang</td>
+                    <td>Rp120.000</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Besar</td>
+                    <td>Rp150.000</td>
+                    <td>Tersedia</td>
+                </tr>
+            </table>
+            <ul>
+                <li>Tanaman karnivora yang dapat menangkap serangga kecil.</li>
+                <li>Ideal untuk dekorasi rumah dan taman.</li>
+                <li>Memerlukan perawatan dengan pencahayaan yang cukup dan kelembapan tinggi.</li>
+            </ul>
+            <button class="buy-button">Buy</button>
+        </div>
+
+        <!-- Produk 5: Bunga Matahari -->
+        <div class="product">
+            <img src="Gambar/Matahari.jpeg" alt="Bunga Matahari">
+            <h3>Bunga Matahari</h3>
+            <p>Bunga Matahari dikenal dengan ukurannya yang besar dan warnanya yang cerah. Melambangkan kebahagiaan dan semangat, bunga ini sangat cocok untuk dekorasi pesta atau hadiah spesial.</p>
+            <table>
+                <tr>
+                    <th>Ukuran</th>
+                    <th>Harga</th>
+                    <th>Ketersediaan</th>
+                </tr>
+                <tr>
+                    <td>Kecil</td>
+                    <td>Rp60.000</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Sedang</td>
+                    <td>Rp90.000</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Besar</td>
+                    <td>Rp130.000</td>
+                    <td>Tersedia</td>
+                </tr>
+            </table>    
+            <ul>    
+                <li>Tersedia dalam warna kuning cerah yang khas.</li>
+                <li>Bunga segar bertahan hingga 5-7 hari.</li>
+                <li>Cocok untuk dekorasi outdoor dan acara kebahagiaan.</li>
+            </ul>
+            <button class="buy-button">Buy</button>
+        </div>
+
+        <!-- Produk 6: Peony -->
+        <div class="product">
+            <img src="Gambar/Peony.jpeg" alt="Peony">
+            <h3>Peony</h3>
+            <p>Peony adalah bunga yang sangat indah dan berkelas, terkenal dengan kelopak yang besar dan lembut. Cocok untuk dekorasi pernikahan dan acara formal lainnya.</p>
+            <table>
+                <tr>
+                    <th>Ukuran</th>
+                    <th>Harga</th>
+                    <th>Ketersediaan</th>
+                </tr>
+                <tr>
+                    <td>Kecil</td>
+                    <td>Rp70.000</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Sedang</td>
+                    <td>Rp110.000</td>
+                    <td>Tersedia</td>
+                </tr>
+                <tr>
+                    <td>Besar</td>
+                    <td>Rp160.000</td>
+                    <td>Tersedia</td>
+                </tr>
+            </table>
+            <ul>
+                <li>Tersedia dalam warna merah muda, putih, dan ungu.</li>
+                <li>Kelopak besar dan lembut yang tahan lama.</li>
+                <li>Sempurna untuk dekorasi acara pernikahan atau peringatan spesial.</li>
+            </ul>
+            <button class="buy-button">Buy</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <p><strong>Alamat:</strong> Jl.Melati No. 12, Semarang</p>
+            <p><strong>Email:</strong> vadilahflowershop@gmail.com</p>
+            <p><strong>Telepon:</strong> 0812-3456-7890</p>
+            <p>Follow us on:
+                <a href="https://www.instagram.com/vadilahflowershop">Instagram</a> |
+                <a href="https://www.facebook.com/vadilahflowershop">Facebook</a> |
+                <a href="https://www.twitter.com/vadilahflowershop">Twitter</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
